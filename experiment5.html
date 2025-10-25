@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  form {
+    margin: 0 auto;
+    width: 50%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+  }
+  label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  input, select, textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 250px;
+    height: 60px;
+  }
+  .buttons {
+    margin-top: 10px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<h2><b>Student Registration Form</b></h2>
+
+<form>
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your full name"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter valid email address"><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter password"><br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="Other">
+  <label for="other">Other</label><br>
+
+  <label for="course">Course:</label>
+  <select id="course" name="course">
+    <option>-- Select Course --</option>
+    <option>B.Tech</option>
+    <option>B.Sc</option>
+    <option>B.Com</option>
+    <option>BCA</option>
+    <option>MCA</option>
+  </select><br>
+
+  <label for="contact">Contact No:</label>
+  <input type="tel" id="contact" name="contact" placeholder="Enter phone number"><br>
+
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="address" placeholder="Enter your address"></textarea><br>
+
+  <div class="buttons">
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+  </div>
+</form>
+
+<footer>
+  © 2025 Student Registration Portal
+</footer>
+
+</body>
+</html>
